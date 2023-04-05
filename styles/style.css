@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -20,6 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  
 }
   /* выше установили ограничения для секции */
 
@@ -79,37 +84,108 @@
 
 .description {
   border: dashed red;
+  display: flex;
+  margin: 100px auto;
 }
 
 .two-columns {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 
 .two-columns__brief {
-
+  width: 175px;
+  border: dashed red;
+  font-size: 18px;
+  line-height: 1.2;
+  font-style: normal;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .two-columns__main-text{
+  border: dashed red;
+  display: flex;
+  align-items: center;
+  /* width: 80%; */
+  min-width: 784px;
+  padding-bottom: 30px;
+ }
 
+.two-columns__paragraph {
+  margin: 0;
+  padding: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
 }
 
-.two-columns__paragraph{
-
-}
-
-.span {
-
+.two-columns__span-accent {
+  font-size: 24px;
+  line-height: 34px;
+  font-style: normal;
+  font-weight: bold;
 }
 
 .digits {
+  border: dashed red;
   padding-top: 100px;
 }
 
-.two-colums__main-text{
+.section-subtitle {
 
 }
 
-.two-columns__paragraph {
+.table{
 
 }
+
+.table__cell{
+
+}
+
+.table__heading {
+
+}
+
+.table__text {
+
+}
+
+.feynman {
+  height: 890px;
+  border: dashed red;
+  padding-top: 100px;
+  display: flex;
+}
+
+.feynman__title {
+  position: relative;
+  z-index: 2;
+}
+
+.feynman__subtitle {
+  position: relative;
+  z-index: 2;
+}
+
+.feynman__img {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  bottom: 0;
+  left: 0;
+  width: 867px;
+  height: 637px;
+  z-index: 1;
+}
+
+.feynman__link {
+
+}
+
