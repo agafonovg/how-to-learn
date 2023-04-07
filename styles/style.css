@@ -2,6 +2,20 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: normal;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 1.2;
+  font-style: normal;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -19,7 +33,6 @@ a {
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-  border: dashed red;
   position: relative;
   display: flex;
   align-items: center;
@@ -83,37 +96,35 @@ a {
 }
 
 .description {
-  border: dashed red;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
-  margin: 100px auto;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: space-around;
 }
 
 .two-columns {
-  margin: 0 auto;
-  padding: 0;
   display: flex;
   justify-content: space-between;
   width: 80%;
+  min-width: 784px;
+  gap: 10%;
 }
 
 .two-columns__brief {
-  width: 175px;
-  border: dashed red;
+  min-width: 175px;
   font-size: 18px;
   line-height: 1.2;
   font-style: normal;
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 
 .two-columns__main-text{
-  border: dashed red;
   display: flex;
-  align-items: center;
-  /* width: 80%; */
-  min-width: 784px;
-  padding-bottom: 30px;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  width: 80%;
  }
 
 .two-columns__paragraph {
@@ -133,59 +144,114 @@ a {
 }
 
 .digits {
-  border: dashed red;
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.section-title {
+  padding-bottom: 20px;
+  display: flex;
+  align-self: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-style: 600;
+/* Высота строки 1.15, размер шрифта 60px, 
+начертание шрифта — 600 */
 }
 
 .section-subtitle {
-
+  display: flex;
+  align-self: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+  /* Высота строки 34px, размер шрифта 24px, 
+  начертание шрифта нормальное */
 }
 
 .table{
-
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  align-self: center;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .table__cell{
-
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .table__heading {
-
+  display: flex;
+  padding-bottom: 20px;
+  font-weight: bolder;
 }
 
 .table__text {
+  display: flex;
+}
 
+.table__text:not(:last-child) {
+  padding-bottom: 20px;
 }
 
 .feynman {
-  height: 890px;
   border: dashed red;
   padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
+  background-color: #f2f2f2;
+  position: relative;
+  background-image: url("../images/feynman.png");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 
 }
 
 .feynman__title {
-  position: relative;
-  z-index: 2;
-}
-
-.feynman__subtitle {
-  position: relative;
-  z-index: 2;
-}
-
-.feynman__img {
-  position: relative;
+  border: dashed red;
   display: flex;
-  justify-content: end;
-  bottom: 0;
-  left: 0;
-  width: 867px;
-  height: 637px;
-  z-index: 1;
+  justify-content: start;
+  /* align-items: center; */
+}
+
+.feynman__title-h1{
+  line-height: 1.15;
+  font-size: 120px;
+  font-style: normal;
+}
+
+.feynman__content {
+  display: flex;
+  flex-direction: row;
+}
+.feynman__subtitle {
+  border: dashed red;
+  z-index: 2;
+  line-height: 51px;
+  font-size: 36px;
+  font-style: normal;
+  z-index: 3;
+  /* Высота строки 51px, размер шрифта 36px, начертание шрифта нормальное */
 }
 
 .feynman__link {
-
+  border: dashed red;
+  /* display: flex;
+  justify-content: end;
+  align-items: center; */
+  z-index: 4;
 }
 
+.kaufman {
+  border: dashed red;
+
+}
