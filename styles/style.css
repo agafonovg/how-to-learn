@@ -263,7 +263,6 @@ li {
 
 .feynman__subtitle {
   display: flex;
-  justify-self: baseline;
   line-height: 51px;
   font-size: 36px;
   font-style: normal;
