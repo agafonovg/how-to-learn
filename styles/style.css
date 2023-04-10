@@ -1,6 +1,14 @@
 a {
   text-decoration: none;
+  display: flex;
+  color:#f2f2f2;
 }
+
+/* p {
+  display: flex;
+  justify-self: center;
+  align-self: start;
+} */
 
 h1, h2, h3, h4 {
   margin: 0;
@@ -16,6 +24,15 @@ h2 {
   font-style: normal;
 }
 
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+ ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+ }
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -29,6 +46,7 @@ h2 {
 }
 
 .header {
+  border: red dotted;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -41,9 +59,22 @@ h2 {
 }
   /* выше установили ограничения для секции */
 
+.logo {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  z-index: 5;
+  left: 64px;
+  height: 32px;
+  width: 228px;
+}
+
+.logo_place_header {
+  background-image: url("../images/logo_place_header.svg");
+}
+
 .header__title {
   width: 730px;
-  flex: 1;
   margin-left: 64px;
   font-size: 102px;
   line-height: 96px;
@@ -63,7 +94,8 @@ h2 {
 }
 
 .header__link {
-  text-decoration: none;
+  color: #2f80ed;
+  /* text-decoration: none; */
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -104,6 +136,7 @@ h2 {
 }
 
 .two-columns__brief {
+
   min-width: 175px;
   font-size: 18px;
   line-height: 1.2;
@@ -111,10 +144,13 @@ h2 {
   display: flex;
 }
 
+.two-columns__link {
+  color: #2f80ed;
+}
+
 .two-columns__main-text{
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   width: 80%;
  }
 
@@ -149,8 +185,6 @@ h2 {
   line-height: 1.15;
   font-size: 60px;
   font-style: 600;
-/* Высота строки 1.15, размер шрифта 60px, 
-начертание шрифта — 600 */
 }
 
 .section-subtitle {
@@ -159,11 +193,9 @@ h2 {
   line-height: 34px;
   font-size: 24px;
   font-style: normal;
-  /* Высота строки 34px, размер шрифта 24px, 
-  начертание шрифта нормальное */
 }
 
-.table{
+.table {
   padding: 60px;
   display: flex;
   flex-wrap: wrap;
@@ -173,7 +205,7 @@ h2 {
   justify-content: space-around;
 }
 
-.table__cell{
+.table__cell {
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -192,7 +224,6 @@ h2 {
   font-size: 18px;
   font-style: normal;
   line-height: 1.2;
-  /* Высота строки 1.2, размер шрифта 18px, начертание шрифта нормальное */
 }
 
 .table__text:not(:last-child) {
@@ -204,8 +235,6 @@ h2 {
   border: dashed red;
   padding-top: 100px;
   padding-bottom: 100px;
-  /* Высота блока: 890px; */
-
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
@@ -215,17 +244,11 @@ h2 {
 }
 
 .feynman__block {
-
   background-image: url("../images/feynman.png");
   background-repeat: no-repeat;
-  /* background-position: 0% 100%; */
-  /* background-size: 867px 637px; */
-
   display: flex;
   flex-direction: column;
   min-height: 890px;
-
-  /* align-self: end; */
 }
 
 .feynman__title {
@@ -242,18 +265,12 @@ h2 {
 
 .feynman__content {
   border: dashed red;
-  
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   
 }
-
-/* .feynman__content:not(:last-child) {
-  position: relative;
-  left: 48px;
-} */
 
 .feynman__subtitle {
   border: dashed red;
@@ -265,25 +282,23 @@ h2 {
   font-size: 36px;
   font-style: normal;
   z-index: 3;
-  /* Высота строки 51px, размер шрифта 36px, начертание шрифта нормальное */
 }
 
 .feynman__link {
+  color: #2f80ed;
   border: dashed red;
   display: flex;
   z-index: 4;
   justify-self: flex-end;
-  /* margin-left: auto; */
   line-height: 51px;
   font-size: 36px;
   font-style: normal;
-  /* Высота строки 51px, размер шрифта 36px, начертание шрифта нормальное */
 }
 
 .kaufman {
   border: dashed red;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 90px;
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -291,56 +306,33 @@ h2 {
   background-color: #1f1f1f;
   color:#f2f2f2;
   position: relative;
-  z-index: 2;
-
+  /* z-index: 0; */
 }
 
 .section-title_theme_dark {
   position: relative;
   z-index: 4;
-/* Высота строки 1.15, размер шрифта 60px, 
-начертание шрифта — 600 */
 }
 
 .section-subtitle_theme_dark {
   position: relative;
   z-index: 4;
-  /* display: flex;
-  align-self: center;
-  line-height: 34px;
-  font-size: 24px;
-  font-style: normal; */
-  /* Высота строки 34px, размер шрифта 24px, 
-  начертание шрифта нормальное */
+  margin-bottom: 80px;
 }
 
 .table_theme_dark {
-  border: red dotted;
   padding: 0;
   position: relative;
   z-index: 4;
   justify-content: space-between;
-  /* display: flex;
-  flex-wrap: wrap;
-  width: 1100px;
-  align-self: center;
-  flex-direction: row;
-  justify-content: space-around; */
 }
 
 .table__cell_theme_dark {
-  border: red dotted;
   width: 200px;
-  /* padding-top: 80px; */
-  /* display: flex;
-  flex-direction: column;
-  margin-bottom: 60px; */
 }
 
 .table__heading_theme_dark {
-  border: red dotted;
   display: flex;
-  padding-top: 80px;
   padding-bottom: 20px;
   font-weight: bolder;
 }
@@ -350,18 +342,106 @@ h2 {
   font-size: 18px;
   font-style: normal;
   /* Высота строки 1.2, размер шрифта 18px, начертание шрифта нормальное */
-  /* Высота строки 1.2, размер шрифта 18px, начертание шрифта нормальное */
 }
 
 .kaufman__triangle {
+  width: 877px;
+  height: 877px;
   display: flex;
   position: absolute;
-  height: 877px;
-  width: 877px;
-  top: 64px;
-  right: -210px;
+  top: 0;
+  right: -280px;
   background-image: url("../images/kaufman-triangle.svg");
-  z-index: 0;
-  /* Позиционируйте элемент абсолютно. Сместите его за правую границу блока на 210 пикселей, в этом вам помогут отрицательные величины. Чтобы треугольник не выходил за границу блока, установите всему блоку kaufman свойство overflow: hidden; подробнее о нем
-— во втором спринте */
+  background-size: cover;
+  background-position: right top;
+  z-index: 1;
+}
+
+.footer {
+  border: red dotted;
+  background-color: #1f1f1f;
+  color:#f2f2f2;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-height: 350px;
+}
+
+.footer__columns {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  border: red dotted;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.footer__column_conetent_copyright {
+  border: red dotted;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  flex-basis: 711px;
+}
+
+.logo_place_footer {
+  left: 0;
+  top: 0;
+  border: red dotted;
+  color: #f2f2f2;
+  background-image: url(../images/logo_place_footer.svg);
+  height: 32px;
+  width: 228px;
+}
+
+.footer__author {
+  display: flex;
+  border: red dotted;
+  line-height: 25px;
+  font-size: 18px;
+  font-style: normal;
+  align-self: flex-end;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.footer__column_content_info {
+  border: red dotted;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_content_social {
+  border: red dotted;
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+}
+
+.footer__column-heading {
+  border: red dotted;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.footer__column-links {
+  border: red dotted;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-link {
+  border: red dotted;
+  display: flex;
+  flex-direction: row;
+  color: #f2f2f2;
+  margin-bottom: 16px;
+}
+
+.footer__social-icon {
+  display: flex;
+  border: red dotted;
+  width: 16px;
+  height: 16px;
 }
