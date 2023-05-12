@@ -235,43 +235,43 @@
 }
 
 .khan {
-  padding-top:105px;
+  padding-top: 105px;
   background-color: #F2F2F2;
 }
 
 .khan__container {
-  width:80%;
-  margin-left:auto;
-  margin-right:auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .khan__author {
-  font-size:30px;
+  font-size: 30px;
   line-height: 42px;
-  margin:0;
+  margin: 0;
 }
 
 .khan__title {
-  font-size:60px;
+  font-size: 60px;
   line-height: 1.15;
   font-weight: bold;
-  margin:0;
+  margin: 0;
 }
 
 .khan__quote{
-  width:790px;
-  margin-top:50px;
-  margin-bottom:36px;
+  width: 790px;
+  margin-top: 50px;
+  margin-bottom: 36px;
   line-height: 34px;
-  font-size:24px;
+  font-size: 24px;
 }
 
 .khan__quote-author {
   line-height: 1.15;
-  font-size:24px;
+  font-size: 24px;
   font-weight: bold;
-  margin-top:36px;
-  margin-bottom:10px;
+  margin-top: 36px;
+  margin-bottom: 10px;
 }
 
 .khan__auote-author-subline {
@@ -356,19 +356,13 @@
 }
 
 .video {
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-/* video {
-  width:100%;
-} */
-
-.video {
+  padding-top: 100px;
   padding-bottom:80px;
-  margin-top:100px;
+
   overflow:hidden;
   background: linear-gradient(to bottom,#fff 70%,#f2f2f2 30%);
 }
@@ -518,6 +512,31 @@
   z-index: 1;
 
   animation: rotation 20s ease-in-out infinite;
+}
+
+.resourses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 100px;
+  padding-bottom: 217px;
+}
+
+.resourses__logo-zone {
+  display: flex;
+  justify-content: space-between;
+
+  margin-right:auto;
+  margin-left:auto;
+  margin-top: 80px;
+  width: 1100px;
+  height: 38px;
+}
+
+.resourses__logo {
+  width: 270px;
+  height: 38px;
 }
 
 .footer {
