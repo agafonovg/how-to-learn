@@ -8,6 +8,13 @@
 
 .link {
   text-decoration: none;
+  opacity: 1;
+}
+
+.link:hover{
+  color:rgb(0, 0, 0);
+  transition:0.75s linear;
+  opacity: 0.1;
 }
 
 .headings {
