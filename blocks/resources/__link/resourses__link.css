@@ -1,9 +1,9 @@
-.resourses_link{
+.resourses__link{
     text-decoration: none;
     opacity: 0.75;
   }
   
-  .resourses_link:hover{
+  .resourses__link:hover{
     color:rgb(244, 2, 208);
     transition:0.75s linear;
     opacity: 0.1;
