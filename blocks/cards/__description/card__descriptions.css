@@ -1,0 +1,8 @@
+.card__desription {
+    display: flex;
+    text-align: center;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0;
+  }

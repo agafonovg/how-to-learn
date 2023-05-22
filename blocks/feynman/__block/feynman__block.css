@@ -1,0 +1,6 @@
+.feynman__block {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+  }
