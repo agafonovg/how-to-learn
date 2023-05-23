@@ -3,7 +3,7 @@
     padding: 0;
     color: #2f80ed;
     text-decoration: none;
-    opacity: 0.75;
+    opacity: 0.75; /* Все ссылки на странице принаведении мыши должны плавно становиться немногопрозрачными подберите opacity и transition на свой вкус */
 }
 
 .header__link:hover{

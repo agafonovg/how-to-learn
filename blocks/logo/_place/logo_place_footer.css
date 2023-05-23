@@ -1,7 +1,7 @@
 .logo_place_footer {
     display: flex;
     color: white;
-    background-image: url(/images/logo_place_footer.svg);
+    background-image: url("../../../images/logo_place_footer.svg");
     height: 32px;
     width: 228px;
   }
